@@ -16,11 +16,16 @@
     "natspec"
   ],
   "scripts": {
-    "install": "rm -rf dist && tsc && cp ./src/template.sqrl ./dist/src",
     "build": "rm -rf dist && tsc && cp ./src/template.sqrl ./dist/src",
     "compile": "hardhat compile",
     "prepublishOnly": "npm run build"
   },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "dist/src/",
+    "src/"
+  ],
   "peerDependencies": {
     "hardhat": "^2.6.4",
     "squirrelly": "^8.0.8"
